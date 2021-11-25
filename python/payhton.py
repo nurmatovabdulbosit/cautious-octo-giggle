@@ -30,4 +30,23 @@
 #for n in range(5):
 #    dos.append(input(f"{n} - imsni kirit: "))
 #print(dos)
+
+#import datetime as dt
     
+#    soat = dt.datetime.now()
+ #   print(soat.isocalendar())
+ 
+import re
+from word import words
+ 
+word1 = "temir"
+word2 = "tomir"
+ 
+andoza = "^t...r^"
+ 
+matches = []
+for word in words:
+    if re.match(andoza, words):
+        matches.append(word)
+         
+print(matches)
